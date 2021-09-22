@@ -12,6 +12,11 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Connection Successfull...");   
     conn.write("Name: SSM");
+    
+    // setInterval(() => {
+    //   conn.write("Move: up")
+    // }, 300);
+
   });
 
   conn.on("data", (data) => {
