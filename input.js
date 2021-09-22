@@ -28,6 +28,10 @@ const setupInput = function (conn) {
       console.log("Move: right")
       connection.write("Move: right")
     };
+
+    if (key === 'y') {
+      connection.write("Say: yeehaw!")
+    }
     
     if (key === '\u0003') {
       process.exit();
